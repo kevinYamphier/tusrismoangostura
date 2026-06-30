@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Guía turística digital de La Angostura, El Torno, Santa Cruz, Bolivia: atractivos, servicios, mapa interactivo y código QR." />
+  <title>Turismo en La Angostura | Guía Digital</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <img src="escudo-ue-alberto-rivera-tapia.jpg" alt="Escudo U.E. Alberto Rivera Tapia" />
+      <span>
+        <strong>Turismo en La Angostura</strong>
+        <small>U.E. Alberto Rivera Tapia</small>
+      </span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#atractivos">Atractivos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#proyecto">Proyecto</a>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Cambiar tema">Modo</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">La Angostura · Santa Cruz · Bolivia</p>
+        <h1>Guía turística digital para conocer La Angostura</h1>
+        <p class="lead">Un sitio web sencillo, moderno y fácil de usar para ubicar atractivos naturales, servicios locales, alojamientos, restaurantes y puntos importantes de la comunidad.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#mapa">Ver mapa interactivo</a>
+          <a class="btn ghost" href="#ruta">Ruta sugerida</a>
+        </div>
+      </div>
+      <aside class="hero-card reveal" aria-label="Datos rápidos">
+        <img src="escudo-ue-alberto-rivera-tapia.jpg" alt="Escudo de la unidad educativa" />
+        <div class="quick-grid">
+          <span><b>60 km</b><small>de Santa Cruz</small></span>
+          <span><b>24 °C</b><small>clima promedio</small></span>
+          <span><b>Ruta 7</b><small>acceso principal</small></span>
+          <span><b>QR</b><small>guía rápida</small></span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-pad intro-section reveal">
+      <div>
+        <p class="eyebrow">Objetivo del proyecto</p>
+        <h2>Promocionar la comunidad y apoyar a los negocios locales</h2>
+      </div>
+      <p>La comunidad de La Angostura cuenta con atractivos como el río Piraí, el Puente Colgante, la plaza, miradores y servicios que han ido creciendo. La guía digital ayuda a que visitantes y pobladores encuentren información clara, organizada y actualizada desde el celular.</p>
+    </section>
+
+    <section class="section-pad" id="atractivos">
+      <div class="section-title reveal">
+        <p class="eyebrow">Explora</p>
+        <h2>Atractivos y puntos de interés</h2>
+        <p>Filtra por tipo de lugar para ubicar rápidamente sitios turísticos, servicios, alojamientos y espacios comunitarios.</p>
+      </div>
+
+      <div class="tools reveal">
+        <label class="search-box" for="searchInput">
+          <span>Buscar</span>
+          <input id="searchInput" type="search" placeholder="Ej.: puente, mirador, farmacia..." autocomplete="off" />
+        </label>
+        <div class="filters" id="filters" aria-label="Filtros de lugares"></div>
+      </div>
+      <div class="cards-grid" id="placesGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section-pad split" id="ruta">
+      <div class="route-card reveal">
+        <p class="eyebrow">Ruta sugerida</p>
+        <h2>Recorrido básico para visitantes</h2>
+        <ol class="timeline">
+          <li><b>Inicio en la Plaza La Angostura.</b><span>Punto de encuentro y referencia para orientarse.</span></li>
+          <li><b>Visita al Puente Colgante.</b><span>Uno de los atractivos principales de la zona.</span></li>
+          <li><b>Mirador La Angostura.</b><span>Espacio para observar el paisaje y tomar fotografías.</span></li>
+          <li><b>Río Piraí y El Chorrito.</b><span>Contacto con la naturaleza y descanso.</span></li>
+          <li><b>Servicios locales.</b><span>Comida, hospedaje, farmacia, centro de salud y transporte.</span></li>
+        </ol>
+      </div>
+      <div class="qr-card reveal">
+        <p class="eyebrow">Acceso rápido</p>
+        <h2>Código QR del mapa</h2>
+        <img src="qr-mapa-la-angostura.png" alt="Código QR para abrir el mapa turístico de La Angostura" />
+        <p>Coloca este QR en puntos estratégicos como la plaza, tranca o lugares de mayor visita para que las personas abran el mapa desde su celular.</p>
+        <button class="btn primary" id="copyMapBtn" type="button">Copiar enlace del mapa</button>
+      </div>
+    </section>
+
+    <section class="section-pad" id="servicios">
+      <div class="section-title reveal">
+        <p class="eyebrow">Comunidad</p>
+        <h2>Servicios que facilitan la visita</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service reveal"><span>🏨</span><h3>Alojamientos</h3><p>Hotel La Capital del Cielo, Alojamiento Piray, Residencial JR y otros hospedajes cercanos.</p></article>
+        <article class="service reveal"><span>🍽️</span><h3>Comida y negocios</h3><p>Restaurantes, venta de comida, tiendas, talleres y emprendimientos locales.</p></article>
+        <article class="service reveal"><span>🏥</span><h3>Apoyo y salud</h3><p>Centro de Salud La Angostura, farmacia y otros puntos útiles para visitantes.</p></article>
+        <article class="service reveal"><span>📍</span><h3>Orientación</h3><p>Mapa interactivo, referencias por Ruta 7 y códigos QR para ubicarse mejor.</p></article>
+      </div>
+    </section>
+
+    <section class="section-pad map-section" id="mapa">
+      <div class="section-title reveal">
+        <p class="eyebrow">Google My Maps</p>
+        <h2>Mapa turístico interactivo</h2>
+        <p>El mapa reúne atractivos, servicios, alojamientos, iglesias, centros de apoyo y puntos de referencia de La Angostura.</p>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe title="Mapa turístico de La Angostura" src="https://www.google.com/maps/d/embed?mid=16uVyZXdb4Ya-8d4OKJWY3ZB1r-RY_CI" loading="lazy"></iframe>
+      </div>
+      <div class="map-actions reveal">
+        <a class="btn primary" href="https://www.google.com/maps/d/viewer?mid=16uVyZXdb4Ya-8d4OKJWY3ZB1r-RY_CI&usp=sharing" target="_blank" rel="noopener">Abrir mapa completo</a>
+      </div>
+    </section>
+
+    <section class="section-pad gallery-section">
+      <div class="section-title reveal">
+        <p class="eyebrow">Croquis digital</p>
+        <h2>Referencias del proyecto</h2>
+        <p>Capturas del recorrido y del listado de puntos cargados en el mapa turístico.</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <img src="mapa-referencia-1.jpg" alt="Referencia de Villa Altura y Puente Colgante en Google Maps" />
+        <img src="mapa-referencia-2.jpg" alt="Referencia de Villa Altura, Puente Colgante y mirador" />
+        <img src="mapa-referencia-3.jpg" alt="Referencia de Pitahaya Angostura y Ruta 7" />
+        <img src="mapa-listado-proyecto.jpg" alt="Listado de puntos del proyecto turismo en Google My Maps" />
+        <img src="mapa-referencia-4.jpg" alt="Referencia de servicios, alojamientos y plaza" />
+        <img src="mapa-referencia-5.jpg" alt="Referencia de U.E. Alberto Rivera Tapia y cancha de fútbol" />
+      </div>
+    </section>
+
+    <section class="section-pad project-section" id="proyecto">
+      <div class="project-card reveal">
+        <p class="eyebrow">Datos del proyecto</p>
+        <h2>Proyecto “Turismo en La Angostura”</h2>
+        <div class="data-list">
+          <p><b>Colegio:</b> U.E. Alberto Rivera Tapia</p>
+          <p><b>Director:</b> Lic. Elar Ubaldo Terrazas</p>
+          <p><b>Docente de carrera:</b> Lic. Sandra J. Viscarra Alarcón</p>
+          <p><b>Docente tutora:</b> Lic. Norma Rosales Aguado</p>
+          <p><b>Integrantes:</b> Kevin Jamphier Morales Flores y Fabia Paola Bailaba Martínez</p>
+        </div>
+      </div>
+      <div class="project-card highlight reveal">
+        <p class="eyebrow">Impacto social</p>
+        <h2>Beneficios esperados</h2>
+        <p>La guía turística busca mejorar el acceso a la información, promover los atractivos naturales, fortalecer la participación comunitaria y generar mayor movimiento económico para pequeños negocios, alojamientos y servicios locales.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><b>Turismo en La Angostura</b> · Guía digital comunitaria</p>
+    <p>La Angostura, municipio de El Torno · Santa Cruz, Bolivia</p>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Volver arriba">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
